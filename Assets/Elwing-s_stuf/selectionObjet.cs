@@ -25,6 +25,10 @@ public class selectionObjet : MonoBehaviour
     }
     public void choix()
     {
+        for (int i = 0; i < ob.Length; i++)
+        {
+            obs[i].SetActive(false);
+        }
         choixaleatoire();
         ob[num1].DOMove(positions[0].position, 1);
         ob[num2].DOMove(positions[1].position, 1);
