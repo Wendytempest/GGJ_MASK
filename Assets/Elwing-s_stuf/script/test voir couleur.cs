@@ -8,6 +8,7 @@ public class testvoircouleur : MonoBehaviour
     public Color vert;
     public Color bleu;
     public GameObject image;
+    public string jeu;
     void Start()
     {
         
@@ -31,4 +32,12 @@ public class testvoircouleur : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     } 
+    public void LoadLevel()
+    {          
+        SceneManager.LoadSceneAsync(jeu);
+    }
+    public void quitter()
+    {
+        Application.Quit();
+    }
 }
