@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class testvoircouleur : MonoBehaviour
 {
@@ -23,5 +24,9 @@ public class testvoircouleur : MonoBehaviour
         {
             image.SetActive(true);
         }
+    } 
+    public void restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     } 
 }
