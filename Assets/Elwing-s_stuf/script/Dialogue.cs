@@ -3,6 +3,13 @@ using UnityEngine.EventSystems;
 
 public class Dialogue : MonoBehaviour, IPointerClickHandler
 {
+    void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.L))
+        {
+            StartInteraction();
+        }
+    }
     [TextArea]
     public string[] dialogues;
     public void StartInteraction()
