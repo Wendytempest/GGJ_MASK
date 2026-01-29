@@ -5,6 +5,8 @@ public class testvoircouleur : MonoBehaviour
 {
     public GameObject objet;
     public Color rouge;
+    public Color vert;
+    public Color bleu;
     public GameObject image;
     void Start()
     {
