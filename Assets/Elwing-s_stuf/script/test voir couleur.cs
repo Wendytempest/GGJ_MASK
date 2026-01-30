@@ -3,7 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class testvoircouleur : MonoBehaviour
 {
-    public GameObject objet;
+    public GameObject taliseman;
+    public GameObject gemme;
     public Color rouge;
     public Color vert;
     public Color bleu;
@@ -17,16 +18,27 @@ public class testvoircouleur : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyUp(KeyCode.V))
+        {
+            verrifier();
+            print(bleu);
+            print(gemme.GetComponent<Renderer>().material.color);
+            print(rouge);
+            print(taliseman.GetComponent<Renderer>().material.color);
+        }
     }
 
     public void verrifier()
     {
-        if(objet.GetComponent<Renderer>().material.color !=rouge )
+        if(taliseman.GetComponent<Renderer>().material.color !=rouge && gemme.GetComponent<Renderer>().material.color !=bleu )
         
         {
             image.SetActive(true);
         }
+        else
+        {
+            print(bleu);
+        }   
     } 
     public void restart()
     {
