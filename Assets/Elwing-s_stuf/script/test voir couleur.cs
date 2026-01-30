@@ -41,13 +41,7 @@ public class testvoircouleur : MonoBehaviour
 
     public void verrifier()
     {
-        if (taliseman && gemme)
-        {
-
-        }
-        else
-        {
-            image.SetActive(true);
-        }   
+        image.SetActive(true);
     } 
+    
 }
