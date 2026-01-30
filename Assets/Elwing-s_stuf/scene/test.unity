@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &111630385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -922,7 +922,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &499938958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -955,12 +955,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15b26e23eb0c3214daeed6b9f67cbf82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objet: {fileID: 1735682344}
-  rouge: {r: 0.783, g: 0, b: 0, a: 1}
-  vert: {r: 0, g: 1, b: 0, a: 1}
-  bleu: {r: 0, g: 0, b: 1, a: 1}
+  taliseman: 0
+  gemme: 0
   image: {fileID: 1028172089}
-  jeu: start
 --- !u!114 &499938960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2045,8 +2042,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.715, y: -163.19}
-  m_SizeDelta: {x: 581.269, y: 129.888}
+  m_AnchoredPosition: {x: 26.1637, y: -163.19}
+  m_SizeDelta: {x: 675.0263, y: 129.888}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &992241344
 MonoBehaviour:
@@ -2088,7 +2085,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 992241345}
+  m_TargetGraphic: {fileID: 1119069350}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -2124,7 +2121,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 0644aac96dfd6704bb4648df956510b8, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2397,7 +2394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1028172090
 RectTransform:
   m_ObjectHideFlags: 0
