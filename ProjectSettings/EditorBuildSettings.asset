@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Elwing-s_stuf/scene/start.unity
     guid: 809c14f0920d7b746b14bdafcd2602d9
   - enabled: 0

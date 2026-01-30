@@ -119,6 +119,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &116928906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 116928908}
+  - component: {fileID: 116928907}
+  m_Layer: 0
+  m_Name: changementfenetre
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &116928907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116928906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b448b9a2e2b8740bdffa15cad4b91c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::changementfenetre
+  jeu: Projet
+--- !u!4 &116928908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116928906}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.19316, y: 4.73468, z: 10.94721}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &218577560
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,8 +247,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1192465825}
-        m_TargetAssemblyTypeName: testvoircouleur, Assembly-CSharp
+      - m_Target: {fileID: 116928907}
+        m_TargetAssemblyTypeName: changementfenetre, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 1
         m_Arguments:
@@ -647,56 +692,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1192465824
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1192465826}
-  - component: {fileID: 1192465825}
-  m_Layer: 0
-  m_Name: testvoircouleur
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1192465825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1192465824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15b26e23eb0c3214daeed6b9f67cbf82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::testvoircouleur
-  objet: {fileID: 0}
-  rouge: {r: 0, g: 0, b: 0, a: 0}
-  vert: {r: 0, g: 0, b: 0, a: 0}
-  bleu: {r: 0, g: 0, b: 0, a: 0}
-  image: {fileID: 0}
-  jeu: test
---- !u!4 &1192465826
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1192465824}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 194.86267, y: 0, z: 246.03387}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1457651725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,8 +1008,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1192465825}
-        m_TargetAssemblyTypeName: testvoircouleur, Assembly-CSharp
+      - m_Target: {fileID: 116928907}
+        m_TargetAssemblyTypeName: changementfenetre, Assembly-CSharp
         m_MethodName: quitter
         m_Mode: 1
         m_Arguments:
@@ -1343,5 +1338,5 @@ SceneRoots:
   - {fileID: 1784265500}
   - {fileID: 1469843415}
   - {fileID: 1146122481}
-  - {fileID: 1192465826}
   - {fileID: 510277812}
+  - {fileID: 116928908}
