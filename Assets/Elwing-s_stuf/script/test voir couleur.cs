@@ -1,18 +1,14 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class testvoircouleur : MonoBehaviour
 {
-    public GameObject taliseman;
-    public GameObject gemme;
-    public Color rouge;
-    public Color vert;
-    public Color bleu;
+    public bool taliseman;
+    public bool gemme;
     public GameObject image;
-    public string jeu;
     void Start()
     {
-        
+        taliseman = false;
+        gemme = false;
     }
 
     // Update is called once per frame
@@ -21,35 +17,37 @@ public class testvoircouleur : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.V))
         {
             verrifier();
-            print(bleu);
-            print(gemme.GetComponent<Renderer>().material.color);
-            print(rouge);
-            print(taliseman.GetComponent<Renderer>().material.color);
         }
     }
 
+    public void taltrue()
+    {
+        taliseman = true;
+    }
+    public void talfalse()
+    {
+        taliseman = false;
+    }
+    public void gemmetrue()
+    {
+        gemme = true;
+    }
+    public void gemmefalse()
+    {
+        gemme = false ;
+    }
+
+
+
     public void verrifier()
     {
-        if(taliseman.GetComponent<Renderer>().material.color !=rouge && gemme.GetComponent<Renderer>().material.color !=bleu )
-        
+        if (taliseman && gemme)
         {
-            image.SetActive(true);
+
         }
         else
         {
-            print(bleu);
+            image.SetActive(true);
         }   
     } 
-    public void restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    } 
-    public void LoadLevel()
-    {          
-        SceneManager.LoadSceneAsync(jeu);
-    }
-    public void quitter()
-    {
-        Application.Quit();
-    }
 }

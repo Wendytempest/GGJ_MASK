@@ -5046,7 +5046,7 @@ GameObject:
   - component: {fileID: 1206475372}
   m_Layer: 0
   m_Name: testvoircouleur
-  m_TagString: Untagged
+  m_TagString: code
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5063,13 +5063,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15b26e23eb0c3214daeed6b9f67cbf82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::testvoircouleur
-  taliseman: {fileID: 1043649267}
-  gemme: {fileID: 474178133}
-  rouge: {r: 1, g: 0, b: 0, a: 1}
-  vert: {r: 0, g: 1, b: 0, a: 1}
-  bleu: {r: 0, g: 0, b: 1, a: 1}
+  taliseman: 0
+  gemme: 0
   image: {fileID: 1764670061}
-  jeu: 
 --- !u!4 &1206475373
 Transform:
   m_ObjectHideFlags: 0
@@ -5215,7 +5211,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -12.359009, y: 244.263}
+  m_AnchoredPosition: {x: -12.358887, y: 244.263}
   m_SizeDelta: {x: -444.28198, y: 301.257}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1246169688
@@ -8468,13 +8464,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15b26e23eb0c3214daeed6b9f67cbf82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  taliseman: {fileID: 0}
-  gemme: {fileID: 0}
-  rouge: {r: 0.783, g: 0, b: 0, a: 1}
-  vert: {r: 0, g: 1, b: 0, a: 1}
-  bleu: {r: 0, g: 0, b: 1, a: 1}
+  taliseman: 0
+  gemme: 0
   image: {fileID: 1764670061}
-  jeu: start
 --- !u!114 &2068310187
 MonoBehaviour:
   m_ObjectHideFlags: 0
