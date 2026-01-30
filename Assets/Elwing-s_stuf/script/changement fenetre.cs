@@ -1,9 +1,12 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class changementfenetre : MonoBehaviour
 {
-    public string jeu;
+    public string jeu; 
+    public GameObject gameover;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
